@@ -1,0 +1,18 @@
+autoadb: Execute a command whenever a new device is connected to adb
+Copyright 2020, Romain Vimont <rom1v@users.github.com>
+Blurb:
+
+
+This command-line tool allows to execute a command whenever a new device is connected to adb.
+
+For example, to execute printf on device connection:
+
+autoadb printf 'Device connected\n'
+
+{} replaces the serial of the device detected:
+
+autoadb printf 'Device %s connected\n' '{}'
+
+It may be used to start scrcpy:
+
+autoadb scrcpy -s '{}'

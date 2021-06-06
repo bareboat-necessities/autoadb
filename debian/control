@@ -1,0 +1,12 @@
+Source: autoadb
+Section: misc
+Priority: optional
+Maintainer: Romain Vimont <rom1v@users.github.com>
+Build-Depends: debhelper (>=10~)
+Standards-Version: 3.9.6
+Homepage: https://github.com/rom1v/autoadb
+
+Package: autoadb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Execute a command whenever a new device is connected to adb
