@@ -10,3 +10,4 @@ Package: autoadb
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Execute a command whenever a new device is connected to adb
+  It may be used to start scrcpy
